@@ -1,0 +1,1040 @@
+# ::snt 調研 鄉鎮 的 經濟 發展 狀況 。
+# ::wid x1_調研 x2_鄉鎮 x3_的 x4_經濟 x5_發展 x6_狀況 x7_。
+# ::align a1:1 a2:2 a4:4 a5:5 a6:6
+(a1 / 調研-01
+	:arg1 (a6 / 狀況
+		:mod (a5 / 發展-01
+			:arg1 (a4 / 經濟))
+		:poss （a2 / 鄉鎮))
+
+# ::snt 調研 鄉鎮 的 經濟學 教授 。
+# ::wid x1_調研 x2_鄉鎮 x3_的 x4_經濟學 x5_教授 x6_。
+# ::align a1:1 a2:2 a4:4 a5:5
+(a5 / 教授
+	:mod (a4 / 經濟學)
+	:arg0-of (a1 / 調研-01
+		:arg1 (a2 / 鄉鎮)))
+	
+# ::snt 記錄 實驗 的 表格 。
+# ::wid x1_記錄 x2_實驗 x3_的 x4_表格 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 表格
+	:arg0-of (a1 / 記錄-01
+		:arg1 (a2 / 實驗-01)))
+
+# ::snt 記錄 實驗 的 結果 。
+# ::wid x1_記錄 x2_實驗 x3_的 x4_結果 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 記錄-01
+	:arg1 (a4 / 結果
+		:mod (a2 / 實驗-01)))
+
+# ::snt 吃 了 遊客 的 鱷魚 。
+# ::wid x1_吃 x2_了 x3_遊客 x4_的 x5_鱷魚 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 鱷魚
+	:arg0-of (a1 / 吃-01
+		:aspect (a2 / 了)
+		:arg1 (a3 / 遊客)))
+
+# ::snt 吃 了 遊客 的 水果 。
+# ::wid x1_吃 x2_了 x3_遊客 x4_的 x5_水果 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a1 / 吃-01
+	:arg1 (a5 / 水果
+		:poss (a3 / 遊客))
+	:aspect (a2 / 了))
+
+# ::snt 切 西瓜 的 刀 。
+# ::wid x1_切 x2_西瓜 x3_的 x4_刀 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 刀
+	:arg0-of (a1 / 切-01
+		:arg1 (a2 / 西瓜)))
+
+# ::snt 削 西瓜 的 皮 。
+# ::wid x1_削 x2_西瓜 x3_的 x4_皮 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 削-01
+	:arg1 (a4 / 皮
+		:poss (a2 / 西瓜)))
+
+# ::snt 消除 健身 的 疲勞。
+# ::wid x1_消除 x2_健身 x3_的 x4_疲勞 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 消除-01
+	:arg1 (a4 / 疲勞
+		:cause (a2 / 健身-01)))
+
+# ::snt 停止 健身 的 後果。
+# ::wid x1_停止 x2_健身 x3_的 x4_後果 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 後果
+	:cause (a1 / 停止-01
+		:arg1 (a2 / 健身-01)))
+
+# ::snt 殺 了 房東 的 貓 。
+# ::wid x1_殺 x2_了 x3_房東 x4_的 x5_貓 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a1 / 殺-01
+	:arg1 (a5 / 貓
+		:poss (a3 / 房東))
+	:aspect (a2 / 了))
+
+# ::snt 殺 了 房東 的 殺手 。
+# ::wid x1_殺 x2_了 x3_房東 x4_的 x5_殺手 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 殺手
+	:arg0-of (a1 / 殺-01
+		:aspect (a2 / 了)
+		:arg1 (a3 / 房東)))
+
+# ::snt 裝修 房子 的 人員 。
+# ::wid x1_裝修 x2_房子 x3_的 x4_人員 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 人員
+	:arg0-of (a1 / 裝修-01
+		:arg1 (a2 / 房子)))
+
+# ::snt 裝修 房子 的 房間 。
+# ::wid x1_裝修 x2_房子 x3_的 x4_房間 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 裝修-01
+	:arg1 (a4 / 房間
+		:poss (a2 / 房子)))
+
+# ::snt 研究 代碼 的 架構 。
+# ::wid x1_研究 x2_代碼 x3_的 x4_架構 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 研究-01
+	:arg1 (a4 / 架構
+		:poss (a2 / 代碼)))
+
+# ::snt 研究 代碼 的 架構師 。
+# ::wid x1_研究 x2_代碼 x3_的 x4_架構師 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 架構師
+	:arg0-of (a1 / 研究-01
+		:arg1 (a2 / 代碼)))
+
+# ::snt 打擊 經濟 犯罪 的 團伙 。
+# ::wid x1_打擊 x2_經濟 x3_犯罪 x4_的 x5_團伙 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a1 / 打擊-01
+	:arg1 (a5 / 團伙
+		:arg0-of (a3 / 犯罪-01
+			:perspective (a2 / 經濟))))  ?not in the guideline?
+
+# ::snt 打擊 經濟 犯罪 的 警察 。
+# ::wid x1_打擊 x2_經濟 x3_犯罪 x4_的 x5_警察 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 警察
+	:arg0-of (a1 / 打擊-01
+		:arg1 (a3 / 犯罪-01
+			:perspective (a2 / 經濟))))
+
+# ::snt 吃 食物 的 倉鼠 。
+# ::wid x1_吃 x2_食物 x3_的 x4_倉鼠 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 倉鼠
+	:arg0-of (a1 / 吃-01
+		:arg1 (a2 / 食物)))   
+
+# ::snt 養 灰色 的 倉鼠 。
+# ::wid x1_養 x2_灰色 x3_的 x4_倉鼠 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 養-01
+	:arg1 (a4 / 倉鼠
+		:mod (a2 / 灰色)))
+
+# ::snt 改變 世界 的 偉人 。
+# ::wid x1_改變 x2_世界 x3_的 x4_偉人 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 偉人
+	:arg0-of (a1 / 改變-01
+		:arg1 (a2 / 世界)))
+
+# ::snt 改變 世界 的 格局 。
+# ::wid x1_改變 x2_世界 x3_的 x4_格局 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 改變-01
+	:arg1 (a4 / 格局
+		:poss (a2 / 世界)))
+
+# ::snt 調查 事故 的 交警 。
+# ::wid x1_調查 x2_事故 x3_的 x4_交警 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 交警
+	:arg0-of (a1 / 調查-01
+		:arg1 (a2 / 事故)))
+
+# ::snt 調查 事故 的 起因 。
+# ::wid x1_調查 x2_事故 x3_的 x4_起因 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 調查-01
+	:arg1 (a4 / 起因
+		:cause-of (a2 / 事故)))
+
+# ::snt 喜歡 旅行 的 過程 。
+# ::wid x1_喜歡 x2_旅行 x3_的 x4_過程 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 喜歡-01
+	:arg1 (a4 / 過程
+		:mod (a2 / 旅行)))
+
+# ::snt 喜歡 旅行 的 人們 。
+# ::wid x1_喜歡 x2_旅行 x3_的 x4_人們 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 人們
+	:arg0-of (a1 / 喜歡-01
+		:arg1 (a2 / 旅行)))
+
+
+# ::snt 演奏 樂曲 的 高潮 部分 。
+# ::wid x1_演奏 x2_樂曲 x3_的 x4_高潮 x5_部分 x6_。
+# ::align a1:1 a2:2 a4:4 a5:5
+(a1 / 演奏-01
+	:arg1 (a5 / 部分
+		:poss (a2 / 樂曲)
+		:arg0-of (a4 / 高潮)))
+
+# ::snt 演奏 樂曲 的 鋼琴家 。
+# ::wid x1_演奏 x2_樂曲 x3_的 x4_鋼琴家 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 鋼琴家
+	:arg0-of (a1 / 演奏-01
+		:arg1 (a2 / 樂曲)))
+
+# ::snt 計算 工資 的 總數 。
+# ::wid x1_計算 x2_工資 x3_的 x4_總數 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 計算-01
+	:arg1 (a4 / 總數
+		:mod (a2 / 工資)))
+
+# ::snt 計算 工資 的 會計 。
+# ::wid x1_計算 x2_工資 x3_的 x4_會計 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 會計
+	:arg0-of (a1 / 計算-01
+		:arg1 (a2 / 工資)))
+
+# ::snt 賣 了 獵人 的 狗 。
+# ::wid x1_賣 x2_了 x3_獵人 x4_的 x5_狗 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a1 / 賣-01
+	:arg1 (a5 / 狗
+		:poss (a3 / 獵人))
+	:aspect (a2 / 了))
+
+# ::snt 賣 了 狗 的 獵人 。
+# ::wid x1_賣 x2_了 x3_狗 x4_的 x5_獵人 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 獵人
+	:arg0-of (a1 / 賣-01
+		:aspect (a2 / 了)
+		:arg1 (a3 / 狗)))
+
+# ::snt 援助 偏遠 地區 的 留守 兒童 。
+# ::wid x1_援助 x2_偏遠 x3_地區 x4_的 x5_留守 x6_兒童 x7_。
+# ::align a1:1 a2:2 a3:3 a5:5 a6:6
+(a1 / 援助-02
+	:arg1 (a6 / 兒童
+		:mod (a5 / 留守-01)
+		:location (a3 / 地區
+			:mod (a2 / 偏遠))))
+
+# ::snt 援助 偏遠 地區 的 志願者 。
+# ::wid x1_援助 x2_偏遠 x3_地區 x4_的 x5_志願者 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 志願者
+	:arg0-of (a1 / 援助-02
+		:arg1 (a3 / 地區
+			:mod (a2 / 偏遠))))
+
+# ::snt 擊中 靶子 的 十環 。
+# ::wid x1_擊中 x2_靶子 x3_的 x4_十環 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 擊中-01
+	:arg1 (a4 / 十環
+		:poss (a2 / 靶子)))
+
+# ::snt 擊中 靶子 的 射手 。
+# ::wid x1_擊中 x2_靶子 x3_的 x4_射手 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 射手
+	:arg0-of (a1 / 擊中-01
+		:arg1 (a2 / 靶子)))
+
+# ::snt 檢查 槍支 的 子彈 。
+# ::wid x1_檢查 x2_槍支 x3_的 x4_子彈 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 檢查-01
+	:arg1 (a4 / 子彈
+		:poss (a2 / 槍支)))
+
+# ::snt 檢查 槍支 的 警察 。
+# ::wid x1_檢查 x2_槍支 x3_的 x4_警察 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 警察
+	:arg0-of (a1 / 檢查-01
+		:arg1 (a2 / 槍支)))
+
+# ::snt 學習 課本 的 文章 。
+# ::wid x1_學習 x2_課本 x3_的 x4_文章 x5_。
+# ::align a1:1 a2:2 a4:4
+(a1 / 學習-01
+	:arg1 (a4 / 文章
+		:poss (a2 / 課本)))
+
+# ::snt 學習 課本 的 學生 。
+# ::wid x1_學習 x2_課本 x3_的 x4_學生 x5_。
+# ::align a1:1 a2:2 a4:4
+(a4 / 學生
+	:arg0-of (a1 / 學習-01
+		:arg1 (a2 / 課本)))
+
+# ::snt 三 條 河 裡 的 石頭 。
+# ::wid x1_三 x2_條 x3_河 x4_裡 x5_的 x6_石頭 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 石頭
+	:location (a3 / 河
+		:quant (a1 / 3)
+		:cunit (a2 / 條)))
+
+# ::snt 三 塊 河 裡 的 石頭 。
+# ::wid x1_三 x2_塊 x3_河 x4_裡 x5_的 x6_石頭 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 石頭
+	:location (a3 / 河)
+	:quant (a1 / 3)
+	:cunit (a2 / 塊))
+
+# ::snt 四 篇 報紙 上 的 文章 。
+# ::wid x1_四 x2_篇 x3_報紙 x4_上 x5_的 x6_文章 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a6 / 文章
+	:location (a4 / 上
+		:arg0 (a3 / 報紙))
+	:quant (a1 / 4)
+	:cunit (a2 / 篇))
+
+# ::snt 四 張 報紙 上 的 文章 。
+# ::wid x1_四 x2_張 x3_報紙 x4_上 x5_的 x6_文章 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a6 / 文章
+	:location (a4 / 上
+		:arg0 (a3 / 報紙
+			:quant (a1 / 4)
+			:cunit (a2 / 張))))
+
+# ::snt 兩 匹 草地 上 的 馬 。
+# ::wid x1_兩 x2_匹 x3_草地 x4_上 x5_的 x6_馬 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a6 / 馬
+	:location (a4 / 上
+		:arg0 (a3 / 草地))
+	:quant (a1 / 2)
+	:cunit (a2 / 匹))
+
+# ::snt 兩 片 草地 上 的 馬 。
+# ::wid x1_兩 x2_片 x3_草地 x4_上 x5_的 x6_馬 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a6 / 馬
+	:location (a4 / 上
+		:arg0 (a3 / 草地
+			:quant (a1 / 2)
+			:cunit (a2 / 片))))
+
+# ::snt 三 節 玩具車 的 電池 。
+# ::wid x1_三 x2_節 x3_玩具車 x4_的 x5_電池 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 電池
+	:quant (a1 / 3)
+	:cunit (a2 / 節)
+	:mod (a3 / 玩具車))
+
+# ::snt 三 輛 玩具車 的 電池 。
+# ::wid x1_三 x2_輛 x3_玩具車 x4_的 x5_電池 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 電池
+	:mod (a3 / 玩具車
+		:quant (a1 / 3)
+		:cunit (a2 / 輛)))
+
+# ::snt 一 個 瓶子 裡 的 花 。
+# ::wid x1_一 x2_個 x3_瓶子 x4_裡 x5_的 x6_花 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 花
+	:location (a3 / 瓶子
+		:quant (a1 / 1)
+		:cunit (a2 / 個)))
+
+# ::snt 一 束 瓶子 裡 的 花 。
+# ::wid x1_一 x2_束 x3_瓶子 x4_裡 x5_的 x6_花 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 花
+	:location (a3 / 瓶子)
+	:quant (a1 / 1)
+	:cunit (a2 / 束))
+
+# ::snt 三 座 寺廟 裡 的 和尚 。
+# ::wid x1_三 x2_座 x3_寺廟 x4_裡 x5_的 x6_和尚 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 和尚
+	:location (a3 / 寺廟
+		:quant (a1 / 3)
+		:cunit (a2 / 座)))
+
+# ::snt 三 位 寺廟 裡 的 和尚 。
+# ::wid x1_三 x2_位 x3_寺廟 x4_裡 x5_的 x6_和尚 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 和尚
+	:location (a3 / 寺廟)
+	:quant (a1 / 3)
+	:cunit (a2 / 位))
+
+# ::snt 八 枚 錢包 裡 的 硬幣 。
+# ::wid x1_八 x2_枚 x3_錢包 x4_裡 x5_的 x6_硬幣 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 硬幣
+	:location (a3 / 錢包)
+	:quant (a1 / 8)
+	:cunit (a2 / 枚))
+
+# ::snt 八 只 錢包 裡 的 硬幣 。
+# ::wid x1_八 x2_只 x3_錢包 x4_裡 x5_的 x6_硬幣 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 硬幣
+	:location (a3 / 錢包
+		:quant (a1 / 8)
+		:cunit (a2 / 只)))
+
+# ::snt 七 朵 盆栽 裡 的 鮮花。
+# ::wid x1_七 x2_朵 x3_盆栽 x4_裡 x5_的 x6_鮮花 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 鮮花
+	:location (a3 / 盆栽)
+	:quant (a1 / 7)
+	:cunit (a2 / 朵))
+
+# ::snt 七 盆 盆栽 裡 的 鮮花。
+# ::wid x1_七 x2_盆 x3_盆栽 x4_裡 x5_的 x6_鮮花 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 鮮花
+	:location (a3 / 盆栽
+		:quant (a1 / 7)
+		:cunit (a2 / 盆)))
+
+# ::snt 三 位 學校 的 研究員 。
+# ::wid x1_三 x2_位 x3_學校 x4_的 x5_研究員 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 研究員
+	:quant (a1 / 3)
+	:cunit (a2 / 位)
+	:poss (a3 / 學校))
+
+# ::snt 三 所 學校 的 研究員 。
+# ::wid x1_三 x2_所 x3_學校 x4_的 x5_研究員 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 研究員
+	:poss (a3 / 學校
+		:quant (a1 / 3)
+		:cunit (a2 / 所)))
+
+# ::snt 六 把 房間 裡 的 椅子 。
+# ::wid x1_六 x2_把 x3_房間 x4_裡 x5_的 x6_椅子 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 椅子
+	:location (a3 / 房間)
+	:quant (a1 / 6)
+	:cunit (a2 / 把))
+
+# ::snt 六 間 房間 裡 的 椅子 。
+# ::wid x1_六 x2_間 x3_房間 x4_裡 x5_的 x6_椅子 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 椅子
+	:location (a3 / 房間
+		:quant (a1 / 6)
+		:cunit (a2 / 間)))
+
+# ::snt 兩 張 演唱會 的 門票 。
+# ::wid x1_兩 x2_張 x3_演唱會 x4_的 x5_門票 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 門票
+	:quant (a1 / 2)
+	:cunit (a2 / 張)
+	:mod (a3 / 演唱會))
+
+# ::snt 兩 場 演唱會 的 門票 。
+# ::wid x1_兩 x2_場 x3_演唱會 x4_的 x5_門票 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 門票
+	:mod (a3 / 演唱會
+		:quant (a1 / 2)
+		:cunit (a2 / 場)))
+
+# ::snt 五 雙 抽屜 裡 的 襪子 。
+# ::wid x1_五 x2_雙 x3_抽屜 x4_裡 x5_的 x6_襪子 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 襪子
+	:location (a3 / 抽屜)
+	:quant (a1 / 5)
+	:cunit (a2 / 雙))
+
+# ::snt 五 個 抽屜 裡 的 襪子 。
+# ::wid x1_五 x2_個 x3_抽屜 x4_裡 x5_的 x6_襪子 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 襪子
+	:location (a3 / 抽屜
+		:quant (a1 / 5)
+		:cunit (a2 / 個)))
+
+# ::snt 四 顆 瓶子 中 的 藥丸 。
+# ::wid x1_四 x2_顆 x3_瓶子 x4_中 x5_的 x6_藥丸 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 藥丸
+	:location (a3 / 瓶子)   ?include-91?
+	:quant (a1 / 4)
+	:cunit (a2 / 顆))
+
+# ::snt 四 只 瓶子 中 的 藥丸 。
+# ::wid x1_四 x2_只 x3_瓶子 x4_中 x5_的 x6_藥丸 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 藥丸
+	:location (a3 / 瓶子
+		:quant (a1 / 4)
+		:cunit (a2 / 只)))
+
+# ::snt 六 個 樹 上 的 核桃 。
+# ::wid x1_六 x2_個 x3_樹 x4_上 x5_的 x6_核桃 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a6 / 核桃
+	:location (a4 / 上
+		:arg0 (a3 / 樹))
+	:quant (a1 / 6)
+	:cunit (a2 / 個))
+
+# ::snt 六 棵 樹 上 的 核桃 。
+# ::wid x1_六 x2_棵 x3_樹 x4_上 x5_的 x6_核桃 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a6 / 核桃
+	:location (a4 / 上
+		:arg0 (a3 / 樹
+			:quant (a1 / 6)
+			:cunit (a2 / 棵))))
+
+# ::snt 幾 本 女生 的 日記 。
+# ::wid x1_幾 x2_本 x3_女生 x4_的 x5_日記 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 日記
+	:quant (a1 / 幾)
+	:cunit (a2 / 本)
+	:poss (a3 / 女生))
+
+# ::snt 幾 個 女生 的 日記 。
+# ::wid x1_幾 x2_個 x3_女生 x4_的 x5_日記 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 日記
+	:poss (a3 / 女生
+		:quant (a1 / 幾)
+		:cunit (a2 / 個)))
+
+# ::snt 幾 支 同學 的 鉛筆 。
+# ::wid x1_幾 x2_支 x3_同學 x4_的 x5_鉛筆 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 鉛筆
+	:quant (a1 / 幾)
+	:cunit (a2 / 支)
+	:poss (a3 / 同學))
+
+# ::snt 幾 位 同學 的 鉛筆 。
+# ::wid x1_幾 x2_位 x3_同學 x4_的 x5_鉛筆 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 鉛筆
+	:poss (a3 / 同學
+		:quant (a1 / 幾)
+		:cunit (a2 / 位)))
+
+# ::snt 三 頭 親戚 的 牛 。
+# ::wid x1_三 x2_頭 x3_親戚 x4_的 x5_牛 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 牛
+	:quant (a1 / 3)
+	:cunit (a2 / 頭)
+	:poss (a3 / 親戚))
+
+# ::snt 三 位 親戚 的 牛 。
+# ::wid x1_三 x2_位 x3_親戚 x4_的 x5_牛 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 牛
+	:poss (a3 / 親戚
+		:quant (a1 / 3)
+		:cunit (a2 / 位)))
+
+# ::snt 四 顆 牛 的 牙齒 。
+# ::wid x1_四 x2_顆 x3_牛 x4_的 x5_牙齒 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 牙齒
+	:quant (a1 / 4)
+	:cunit (a2 / 顆)
+	:poss (a3 / 牛))
+
+# ::snt 四 頭 牛 的 牙齒 。
+# ::wid x1_四 x2_頭 x3_牛 x4_的 x5_牙齒 x6_。
+# ::align a1:1 a2:2 a3:3 a5:5
+(a5 / 牙齒
+	:poss (a3 / 牛
+		:quant (a1 / 4)
+		:cunit (a2 / 頭)))
+
+# ::snt 七 粒 沙漠 裡 的 沙 。
+# ::wid x1_七 x2_粒 x3_沙漠 x4_裡 x5_的 x6_沙 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 沙
+	:location (a3 / 沙漠)
+	:quant (a1 / 7)
+	:cunit (a2 / 粒))
+
+# ::snt 七 片 沙漠 裡 的 沙 。
+# ::wid x1_七 x2_片 x3_沙漠 x4_裡 x5_的 x6_沙 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 沙
+	:location (a3 / 沙漠
+		:quant (a1 / 7)
+		:cunit (a2 / 片)))
+
+# ::snt 九 個 盒子 裡 的 香水 。
+# ::wid x1_九 x2_個 x3_盒子 x4_裡 x5_的 x6_香水 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 香水
+	:location (a3 / 盒子
+		:quant (a1 / 9)
+		:cunit (a2 / 個)))
+
+# ::snt 九 瓶 盒子 裡 的 香水 。
+# ::wid x1_九 x2_瓶 x3_盒子 x4_裡 x5_的 x6_香水 x7_。
+# ::align a1:1 a2:2 a3:3 a6:6
+(a6 / 香水
+	:location (a3 / 盒子)
+	:quant (a1 / 9)
+	:cunit (a2 / 瓶))
+
+# ::snt 寫 了 五 道 題 。
+# ::wid x1_寫 x2_了 x3_五 x4_道 x5_題 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 寫-01
+	:arg1 (a5 / 題
+		:quant (a3 / 5)
+		:cunit (a4 / 道))
+	:aspect (a2 / 了))
+
+# ::snt 寫 了 五 分鐘 題 。
+# ::wid x1_寫 x2_了 x3_五 x4_分鐘 x5_題 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 寫-01
+	:arg1 (a5 / 題)
+	:duration (a7 / temporal-quantity
+		:quant (a3 / 5)
+		:cunit (a4 / 分鐘))
+	:aspect (a2 / 了))
+
+# ::snt 挑選 了 一 小時 木材 。
+# ::wid x1_挑選 x2_了 x3_一 x4_小時 x5_木材 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 挑選-01
+	:arg1 (a5 / 木材)
+	:duration (a7 / temporal-quantity
+		:quant (a3 / 1)
+		:cunit (a4 小時))
+	:aspect (a2 / 了))
+
+# ::snt 挑選 了 千 年 木材 。
+# ::wid x1_挑選 x2_了 x3_千 x4_年 x5_木材 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 挑選-01
+	:arg1 (a5 / 木材
+		:mod (a7 / temporal-quantity
+			:quant (a3 / 1000)
+			:cunit (a4 / 年)))
+	:aspect (a2 / 了))
+
+# ::snt 講 了 兩 小時 歷史 。
+# ::wid x1_講 x2_了 x3_兩 x4_小時 x5_歷史 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 講-01
+	:arg1 (a5 / 歷史)
+	:duration (a7 / temporal-quantity
+		:quant (a3 / 2)
+		:cunit (a4 小時))
+	:aspect (a2 / 了))
+
+# ::snt 講 了 五千 年 歷史 。
+# ::wid x1_講 x2_了 x3_五千 x4_年 x5_歷史 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 講-01
+	:arg1 (a5 / 歷史
+		:mod (a7 / temporal-quantity
+			:quant (a3 / 5000)
+			:cunit (a4 / 年)))
+	:aspect (a2 / 了))
+
+# ::snt 畫 了 三 分鐘 畫 。
+# ::wid x1_畫 x2_了 x3_三 x4_分鐘 x5_畫 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 畫-01
+	:arg1 (a5 / 畫)                         ?-01?
+	:duration (a7 / temporal-quantity
+		:quant (a3 / 3)
+		:cunit (a4 / 分鐘))
+	:aspect (a2 / 了))
+
+# ::snt 畫 了 六 幅 畫 。
+# ::wid x1_畫 x2_了 x3_六 x4_幅 x5_畫 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 畫-01
+	:arg1 (a5 / 畫
+		:quant (a3 / 6)
+		:cunit (a4 / 幅))
+	:aspect (a2 / 了))
+
+# ::snt 參觀 了 五 小時 建築 。
+# ::wid x1_參觀 x2_了 x3_五 x4_小時 x5_建築 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 參觀-01
+	:arg1 (a5 / 建築)
+	:duration (a7 / temporal-quantity
+		:quant (a3 / 5)
+		:cunit (a4 小時))
+	:aspect (a2 / 了))
+
+# ::snt 參觀 了 百 年 建築 。
+# ::wid x1_參觀 x2_了 x3_百 x4_年 x5_建築 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 參觀-01
+	:arg1 (a5 / 建築
+		:mod (a7 / temporal-quantity
+			:quant (a3 / 100)
+			:cunit (a4 / 年)))
+	:aspect (a2 / 了))
+
+# ::snt 寫 了 六 張 字帖 。
+# ::wid x1_寫 x2_了 x3_六 x4_張 x5_字帖 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 寫-01
+	:arg1 (a5 / 字帖
+		:quant (a3 / 6)
+		:cunit (a4 / 張))
+	:aspect (a2 / 了))
+
+# ::snt 寫 了 六 天 字帖 。
+# ::wid x1_寫 x2_了 x3_六 x4_天 x5_字帖 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 寫-01
+	:arg1 (a5 / 字帖)
+	:duration (a7 / temporal-quantity
+		:quant (a3 / 6)
+		:cunit (a4 / 天))
+	:aspect (a2 / 了))
+
+# ::snt 學習 了 五 小時 外語 課程 。
+# ::wid x1_學習 x2_了 x3_五 x4_小時 x5_外語 x6_課程 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5 a6:6
+(a1 / 學習-01
+	:arg1 (a6 / 課程
+		:mod (a5 / 外語))
+	:duration (a8 / temporal-quantity
+		:quant (a3 / 5)
+		:cunit (a4 / 小時))
+	:aspect (a2 / 了))
+
+# ::snt 學習 了 五 門 外語 課程 。
+# ::wid x1_學習 x2_了 x3_五 x4_門 x5_外語 x6_課程 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5 a6:6
+(a1 / 學習-01
+	:arg1 (a6 / 課程
+		:mod (a5 / 外語)
+		:quant (a3 / 5)
+		:cunit (a4 / 門))
+	:aspect (a2 / 了))
+
+# ::snt 欣賞 了 幾 小時 村落 。
+# ::wid x1_欣賞 x2_了 x3_幾 x4_小時 x5_村落 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 欣賞-01
+	:arg1 (a5 / 村落)
+	:duration (a7 / temporal-quantity
+		:quant (a3 / 幾)
+		:cunit (a4 小時))
+	:aspect (a2 / 了))
+
+# ::snt 欣賞 了 幾 百年 前 的 村落 。
+# ::wid x1_欣賞 x2_了 x3_幾百 x4_年 x5_前 x6_的 x7_村落 x8_。
+# ::align a1:1 a2:2 a3:3.1 a4:4 a5:5 a7:7
+(a1 / 欣賞-01
+	:arg1 (a7 / 村落
+		:time (a5 / 前
+			:op1 (a10 / now)
+			:quant (a9 / temporal-quantity
+				:quant (a3 / 幾
+					:op1 (a8 / 100))
+				:cunit (a4 / 年))))
+	:aspect (a2 / 了))
+
+# ::snt 彈奏 了 一 首 曲子 。
+# ::wid x1_彈奏 x2_了 x3_一 x4_首 x5_曲子 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 彈奏-01
+	:arg1 (a5 / 曲子
+		:quant (a3 / 1)
+		:cunit (a4 / 首))
+	:aspect (a2 / 了))
+
+# ::snt 彈奏 了 一 天 曲子 。
+# ::wid x1_彈奏 x2_了 x3_一 x4_天 x5_曲子 x6_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5
+(a1 / 彈奏-01
+	:arg1 (a5 / 曲子)
+	:duration (a6 / temporal-quantity
+		:quant (a3 / 1)
+		:cunit (a4 / 天))
+	:aspect (a2 / 了))
+
+# ::snt 我 看 了 十 天 報紙 。
+# ::wid x1_我 x2_看 x3_了 x4_十 x5_天 x6_報紙 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5 a6:6
+(a2 / 看-01
+	:arg0 (a1 / 我)
+	:arg1 (a6 / 報紙)
+	:duration (a7 / temporal-quantity
+		:quant (a4 / 10)
+		:cunit (a5 / 天))
+	:aspect (a3 / 了))
+
+# ::snt 我 看 了 十 份 報紙 。
+# ::wid x1_我 x2_看 x3_了 x4_十 x5_份 x6_報紙 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5 a6:6
+(a2 / 看-01
+	:arg0 (a1 / 我)
+	:arg1 (a6 / 報紙
+		:quant (a4 / 10)
+		:cunit (a5 / 份))
+	:aspect (a3 / 了))
+
+# ::snt 毯子 和 凳子 的 腿 都 壞 了 。
+# ::wid x1_毯子 x2_和 x3_凳子 x4_的 x5_腿 x6_都 x7_壞 x8_了 x9_。
+# ::align a1:1 a2:2 a3:3 a5:5 a6:6 a7:7 a8:8
+(a7 / 壞-01
+	:mod (a6 / 都)      # ?or delete?
+	:aspect (a8 / 了)
+	:arg0 (x2 / and
+		:op1 (a1 / 毯子)
+		:op2 (a5 / 腿
+			:poss (a3 / 凳子))))
+
+# ::snt 他 的 衣服 的 袖子 和 鞋 都 臟 了 。
+# ::wid x1_他 x2_的 x3_衣服 x4_的 x5_袖子 x6_和 x7_鞋 x8_都 x9_臟 x10_了 x11_。
+# ::align a1:1 a3:3 a5:5 a6:6 a7:7 a8:8 a9:9 a10:10
+(a9 / 臟               # ?not in the dictionary?
+	:mod (a8 / 都)
+	:aspect (a10 / 了)
+	:arg0 (x6 / and
+		:op1 (a5 / 袖子
+			:poss (a3 / 衣服))
+		:op2 (a7 / 鞋)
+		:poss (a1 / 他)))           # ??
+
+# ::snt 椅子 和 電腦 的 屏幕 需要 擺放 整齊 。
+# ::wid x1_椅子 x2_和 x3_電腦 x4_的 x5_屏幕 x6_需要 x7_擺放 x8_整齊 x9_。
+# ::align a1:1 a2:2 a3:3 a5:5 a6:6 a7:7 a8:8
+(a7 / 擺放-01                 
+	:manner (a8 / 整齊-01
+		:arg0 x2)
+	:arg1 (a2 / and
+		:op1 (a1 / 椅子)
+		:op2 (a5 / 屏幕
+			:poss (a3 / 電腦)))
+	:arg1-of (a6 / 需要-01))
+or
+(a6 / 需要-01
+	:arg1 (a7 / 擺放-01
+		:manner (a8 / 整齊-01
+		:arg0 a2))
+	:arg0 (a2 / and
+		:op1 (a1 / 椅子)
+		:op2 (a5 / 屏幕
+			:poss (a3 / 電腦))))
+
+# ::snt 桌子 和 沙發 上 的 電腦 都 要 開機 。
+# ::wid x1_桌子 x2_和 x3_沙發 x4_上 x5_的 x6_電腦 x7_都 x8_要 x9_開機 x10_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6 a7:7 a8:8 a9:9
+(a8 / 要-05
+	:arg1 (a9 / 開機-01)            # ?arg??
+	:arg0 (a6 / 電腦
+		:location (a4 / 上
+			:arg0 (a2 / and
+				:op1 (a1 / 桌子)
+				:op2 (a3 / 沙發))))
+	:mod (a7 / 都))                 # ?or delete?or child of x8?
+									# "的 人 都 要 有 歷史 責任感"
+# ::snt 警察 和 商場 的 保安 在 大樓 外面 交流 。
+# ::wid x1_警察 x2_和 x3_商場 x4_的 x5_保安 x6_在 x7_大樓 x8_外面 x9_交流 x10_。
+# ::align a1:1 a2:2 a3:3 a5:5 a7:7 a8:8 a9:9
+(a9 / 交流-01
+	:arg0 (a2 / and
+		:op1 (a1 / 警察)
+		:op2 (a5 / 保安
+			:poss (a3 / 商場)))
+	:location (a8 / 外面
+		:arg0 (a7 / 大樓)))
+
+# ::snt 魚 和 天空 中 的 小鳥 都 是 他 的 捕獵 對象 。
+# ::wid x1_魚 x2_和 x3_天空 x4_中 x5_的 x6_小鳥 x7_都 x8_是 x9_他 x10_的 x11_捕獵 x12_對象 x13_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6 a7:7 a9:9 a11:11 a12:12
+(a12 / 對象
+	:arg1-of (a11 / 捕獵)   # ?no such word?
+	:domain (a2 / and      # ?domain?
+		:op1 (a1 / 魚)
+		:op2 (a6 / 小鳥
+			:location (a4 / 中
+				:arg0 (a3 / 天空)))
+		:mod (a7 / 都))    # ?delete?
+	:poss (a9 / 他))
+
+# ::snt 人 和 動物 的 肺 都 用來 呼吸 。
+# ::wid x1_人 x2_和 x3_動物 x4_的 x5_肺 x6_都 x7_用來 x8_呼吸 x9_。
+# ::align a1:1 a2:2 a3:3 a5:5 a6:6 a7:7 a8:8
+(a7 / 用來-01
+	:arg1 (a5 / 肺
+		:poss (a2 / and
+			:op1 (a1 / 人)
+			:op2 (a3 / 動物))
+		:mod (a6 / 都))      # ??
+	:arg2 (a8 / 呼吸-01))
+
+# ::snt 海 和 天 上 的 雲朵 互相 輝映 。
+# ::wid x1_海 x2_和 x3_天 x4_上 x5_的 x6_雲朵 x7_互相 x8_輝映 x9_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6 a7:7 a8:8
+(a8 / 輝映-01
+	:manner (a7 / 互相)
+	:arg0 (a2 / and
+		:op1 (a1 / 海)
+		:op2 (a6 / 雲朵
+			:location (a4 / 上
+				:arg0 (a3 / 天)))))
+
+# ::snt 紙張 和 生鏽 的 銅錢 被 發掘 出來 。
+# ::wid x1_紙張 x2_和 x3_生鏽 x4_的 x5_銅錢 x6_被 x7_發掘 x8_出來 x9_。
+# ::align a1:1 a2:2 a3:3 a5:5 a7:7 a8:8
+(a7 / 發掘-01
+	:cause-of (a8 / 出來)
+	:arg0 (a9 / person)
+	:arg1 (a2 / and
+		:op1 (a1 / 紙張)
+		:op2 (a5 / 銅錢
+			:mod (a3 / 生鏽-01))))
+
+# ::snt 醫生 和 病人 的 家屬 耐心 溝通 。
+# ::wid x1_醫生 x2_和 x3_病人 x4_的 x5_家屬 x6_耐心 x7_溝通 x8_。
+# ::align a1:1 a2:2 a3:3 a5:5 a6:6 a7:7
+(a7 / 溝通-01
+	:manner (a6 / 耐心)
+	:arg0 (a2 / and
+		:op1 (a1 / 醫生)
+		:op2 (a5 / 家屬
+			:poss (x3 / 病人))))
+
+# ::snt 領 了 我 和 你 的 結婚證 。
+# ::wid x1_領 x2_了 x3_我 x4_和 x5_你 x6_的 x7_結婚證 x8_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5 a7:7
+(a1 / 領-01
+	:aspect (a2 / 了)
+	:arg1 (a7 / 結婚證
+		:poss (a4 / and
+			:op1 (a3 / 我)
+			:op2 (a5 / 你))))
+
+# ::snt 照片 裡 是 我 和 我 的 姐妹 。
+# ::wid x1_照片 x2_裡 x3_是 x4_我 x5_和 x6_我 x7_的 x8_姐妹 x9_。
+# ::align a1:1 a4:4 a5:5 a8:8
+(a5 / and
+	:op1 (a4 / 我)
+	:op2 (a8 / 姐妹
+		:poss a4)
+	:domain (a1 / 照片))
+
+# ::snt 男人 和 女人 的 臉 都 需要 呵護 。
+# ::wid x1_男人 x2_和 x3_女人 x4_的 x5_臉 x6_都 x7_需要 x8_呵護 x9_。
+# ::align a1:1 a2:2 a3:3 a5:5 a7:7 a8:8
+(a7 / 需要-01
+	:arg1 (a8 / 呵護)
+	:arg0 (a5 / 臉
+		:poss (a2 / and
+			:op1 (a1 / 男人)
+			:op2 (a3 / 女人))))
+
+# ::snt 山 和 水 的 顏色 很 和諧 。
+# ::wid x1_山 x2_和 x3_水 x4_的 x5_顏色 x6_很 x7_和諧 x8_。
+# ::align a1:1 a2:2 a3:3 a5:5 a6:6 a7:7
+(a7 / 和諧-01
+	:degree (a6 / 很)
+	:arg0 (a5 / 顏色
+		:poss (a2 / and
+			:op1 (a1 / 山)
+			:op2 (a3 / 水))))
+
+# ::snt 麵包 和 牛奶 的 產地 是 一樣 的 。
+# ::wid x1_麵包 x2_和 x3_牛奶 x4_的 x5_產地 x6_是 x7_一樣 x8_的 x9_。
+# ::align a1:1 a2:2 a3:3 a5:5 a7:7
+(a7 / 一樣-01
+	:arg0 (a5 / 產地
+		:poss (a2 / and
+			:op1 (a1 / 麵包)
+			:op2 (a3 / 牛奶))))
+
+# ::snt 鳥 和 海 裡 的 魚 相遇 。
+# ::wid x1_鳥 x2_和 x3_海 x4_裡 x5_的 x6_魚 x7_相遇 x8_。
+# ::align a1:1 a2:2 a3:3 a6:6 a7:7
+(a7 / 相遇-01
+	:arg0 (a2 / and
+		:op1 (a1 / 鳥)
+		:op2 (a6 / 魚
+			:location (a3 / 海))))
+
+# ::snt 看到 了 天 和 海 的 交界 。
+# ::wid x1_看到 x2_了 x3_天 x4_和 x5_海 x6_的 x7_交界 x8_。
+# ::align a1:1 a2:2 a3:3 a4:4 a5:5 a7:7
+(a1 / 看到-01
+	:aspect (a2 / 了)
+	:arg1 (a7 / 交界
+		:poss (a4 / and
+			:op1 (a3 / 天)
+			:op2 (a5 / 海))))
+
+# ::snt 講解 雞 和 鵝 的 區別 。
+# ::wid x1_講解 x2_雞 x3_和 x4_鵝 x5_的 x6_區別 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a1 / 講解-01
+	:arg1 (a6 / 區別
+		:poss (a3 / and
+			:op1 (a2 / 雞)
+			:op2 (a4 / 鵝))))
+
+# ::snt 講解 原理 和 製作 的 步驟 。
+# ::wid x1_講解 x2_原理 x3_和 x4_製作 x5_的 x6_步驟 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a1 / 講解-01
+	:arg1 (a3 / and
+		:op1 (a2 / 原理)
+		:op2 (a6 / 步驟
+			:poss (a4 / 製作-01))))
+
+# ::snt 對比 鹿角 和 犀牛 的 角 。
+# ::wid x1_對比 x2_鹿角 x3_和 x4_犀牛 x5_的 x6_角 x7_。
+# ::align a1:1 a2:2 a3:3 a4:4 a6:6
+(a1 / 對比-01
+	:arg1 (a3 / and
+		:op1 (a2 / 鹿角)
+		:op2 (a6 / 角
+			:poss (a4 / 犀牛))))
+
