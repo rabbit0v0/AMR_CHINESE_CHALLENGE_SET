@@ -5,7 +5,7 @@
 	:arg1 (a6 / 狀況
 		:mod (a5 / 發展-01
 			:arg1 (a4 / 經濟))
-		:poss （a2 / 鄉鎮))
+		:poss (a2 / 鄉鎮)))
 
 # ::snt 調研 鄉鎮 的 經濟學 教授 。
 # ::wid x1_調研 x2_鄉鎮 x3_的 x4_經濟學 x5_教授 x6_。
@@ -123,7 +123,7 @@
 (a1 / 打擊-01
 	:arg1 (a5 / 團伙
 		:arg0-of (a3 / 犯罪-01
-			:perspective (a2 / 經濟))))  ?not in the guideline?
+			:perspective (a2 / 經濟))))
 
 # ::snt 打擊 經濟 犯罪 的 警察 。
 # ::wid x1_打擊 x2_經濟 x3_犯罪 x4_的 x5_警察 x6_。
@@ -494,7 +494,7 @@
 # ::wid x1_四 x2_顆 x3_瓶子 x4_中 x5_的 x6_藥丸 x7_。
 # ::align a1:1 a2:2 a3:3 a6:6
 (a6 / 藥丸
-	:location (a3 / 瓶子)   ?include-91?
+	:location (a3 / 瓶子)
 	:quant (a1 / 4)
 	:cunit (a2 / 顆))
 
@@ -683,7 +683,7 @@
 # ::wid x1_畫 x2_了 x3_三 x4_分鐘 x5_畫 x6_。
 # ::align a1:1 a2:2 a3:3 a4:4 a5:5
 (a1 / 畫-01
-	:arg1 (a5 / 畫)                         ?-01?
+	:arg1 (a5 / 畫)
 	:duration (a7 / temporal-quantity
 		:quant (a3 / 3)
 		:cunit (a4 / 分鐘))
@@ -825,7 +825,7 @@
 # ::wid x1_毯子 x2_和 x3_凳子 x4_的 x5_腿 x6_都 x7_壞 x8_了 x9_。
 # ::align a1:1 a2:2 a3:3 a5:5 a6:6 a7:7 a8:8
 (a7 / 壞-01
-	:mod (a6 / 都)      # ?or delete?
+	:mod (a6 / 都)
 	:aspect (a8 / 了)
 	:arg0 (x2 / and
 		:op1 (a1 / 毯子)
@@ -835,14 +835,14 @@
 # ::snt 他 的 衣服 的 袖子 和 鞋 都 臟 了 。
 # ::wid x1_他 x2_的 x3_衣服 x4_的 x5_袖子 x6_和 x7_鞋 x8_都 x9_臟 x10_了 x11_。
 # ::align a1:1 a3:3 a5:5 a6:6 a7:7 a8:8 a9:9 a10:10
-(a9 / 臟               # ?not in the dictionary?
+(a9 / 臟
 	:mod (a8 / 都)
 	:aspect (a10 / 了)
 	:arg0 (x6 / and
 		:op1 (a5 / 袖子
 			:poss (a3 / 衣服))
 		:op2 (a7 / 鞋)
-		:poss (a1 / 他)))           # ??
+		:poss (a1 / 他)))
 
 # ::snt 椅子 和 電腦 的 屏幕 需要 擺放 整齊 。
 # ::wid x1_椅子 x2_和 x3_電腦 x4_的 x5_屏幕 x6_需要 x7_擺放 x8_整齊 x9_。
@@ -869,14 +869,14 @@ or
 # ::wid x1_桌子 x2_和 x3_沙發 x4_上 x5_的 x6_電腦 x7_都 x8_要 x9_開機 x10_。
 # ::align a1:1 a2:2 a3:3 a4:4 a6:6 a7:7 a8:8 a9:9
 (a8 / 要-05
-	:arg1 (a9 / 開機-01)            # ?arg??
+	:arg1 (a9 / 開機-01)
 	:arg0 (a6 / 電腦
 		:location (a4 / 上
 			:arg0 (a2 / and
 				:op1 (a1 / 桌子)
 				:op2 (a3 / 沙發))))
-	:mod (a7 / 都))                 # ?or delete?or child of x8?
-									# "的 人 都 要 有 歷史 責任感"
+	:mod (a7 / 都))
+
 # ::snt 警察 和 商場 的 保安 在 大樓 外面 交流 。
 # ::wid x1_警察 x2_和 x3_商場 x4_的 x5_保安 x6_在 x7_大樓 x8_外面 x9_交流 x10_。
 # ::align a1:1 a2:2 a3:3 a5:5 a7:7 a8:8 a9:9
@@ -892,13 +892,13 @@ or
 # ::wid x1_魚 x2_和 x3_天空 x4_中 x5_的 x6_小鳥 x7_都 x8_是 x9_他 x10_的 x11_捕獵 x12_對象 x13_。
 # ::align a1:1 a2:2 a3:3 a4:4 a6:6 a7:7 a9:9 a11:11 a12:12
 (a12 / 對象
-	:arg1-of (a11 / 捕獵)   # ?no such word?
-	:domain (a2 / and      # ?domain?
+	:arg1-of (a11 / 捕獵)
+	:domain (a2 / and
 		:op1 (a1 / 魚)
 		:op2 (a6 / 小鳥
 			:location (a4 / 中
 				:arg0 (a3 / 天空)))
-		:mod (a7 / 都))    # ?delete?
+		:mod (a7 / 都))
 	:poss (a9 / 他))
 
 # ::snt 人 和 動物 的 肺 都 用來 呼吸 。
@@ -909,7 +909,7 @@ or
 		:poss (a2 / and
 			:op1 (a1 / 人)
 			:op2 (a3 / 動物))
-		:mod (a6 / 都))      # ??
+		:mod (a6 / 都))
 	:arg2 (a8 / 呼吸-01))
 
 # ::snt 海 和 天 上 的 雲朵 互相 輝映 。
