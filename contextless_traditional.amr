@@ -646,7 +646,7 @@
 	:arg1 (a5 / 木材)
 	:duration (a7 / temporal-quantity
 		:quant (a3 / 1)
-		:cunit (a4 小時))
+		:cunit (a4 / 小時))
 	:aspect (a2 / 了))
 
 # ::snt 挑選 了 千 年 木材 。
@@ -666,7 +666,7 @@
 	:arg1 (a5 / 歷史)
 	:duration (a7 / temporal-quantity
 		:quant (a3 / 2)
-		:cunit (a4 小時))
+		:cunit (a4 / 小時))
 	:aspect (a2 / 了))
 
 # ::snt 講 了 五千 年 歷史 。
@@ -705,7 +705,7 @@
 	:arg1 (a5 / 建築)
 	:duration (a7 / temporal-quantity
 		:quant (a3 / 5)
-		:cunit (a4 小時))
+		:cunit (a4 / 小時))
 	:aspect (a2 / 了))
 
 # ::snt 參觀 了 百 年 建築 。
@@ -765,10 +765,10 @@
 	:arg1 (a5 / 村落)
 	:duration (a7 / temporal-quantity
 		:quant (a3 / 幾)
-		:cunit (a4 小時))
+		:cunit (a4 / 小時))
 	:aspect (a2 / 了))
 
-# ::snt 欣賞 了 幾 百年 前 的 村落 。
+# ::snt 欣賞 了 幾百 年 前 的 村落 。
 # ::wid x1_欣賞 x2_了 x3_幾百 x4_年 x5_前 x6_的 x7_村落 x8_。
 # ::align a1:1 a2:2 a3:3.1 a4:4 a5:5 a7:7
 (a1 / 欣賞-01
@@ -847,15 +847,6 @@
 # ::snt 椅子 和 電腦 的 屏幕 需要 擺放 整齊 。
 # ::wid x1_椅子 x2_和 x3_電腦 x4_的 x5_屏幕 x6_需要 x7_擺放 x8_整齊 x9_。
 # ::align a1:1 a2:2 a3:3 a5:5 a6:6 a7:7 a8:8
-(a7 / 擺放-01                 
-	:manner (a8 / 整齊-01
-		:arg0 x2)
-	:arg1 (a2 / and
-		:op1 (a1 / 椅子)
-		:op2 (a5 / 屏幕
-			:poss (a3 / 電腦)))
-	:arg1-of (a6 / 需要-01))
-or
 (a6 / 需要-01
 	:arg1 (a7 / 擺放-01
 		:manner (a8 / 整齊-01
